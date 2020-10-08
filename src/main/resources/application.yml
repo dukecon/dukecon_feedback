@@ -1,6 +1,6 @@
 server:
   port: 8090
-  use-forward-headers: true
+  forward-headers-strategy: NATIVE
 
 keycloak:
   realm: dukecon-developer
