@@ -238,6 +238,11 @@
                 <artifactId>postgresql</artifactId>
                 <version>${testcontainers.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-indexer</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -393,6 +398,11 @@
                                 <groupId>org.projectlombok</groupId>
                                 <artifactId>lombok</artifactId>
                                 <version>${lombok.version}</version>
+                            </annotationProcessorPath>
+                            <annotationProcessorPath>
+                                <groupId>org.springframework</groupId>
+                                <artifactId>spring-context-indexer</artifactId>
+                                <version>${spring.version}</version>
                             </annotationProcessorPath>
                         </annotationProcessorPaths>
                         <compilerArgs>
