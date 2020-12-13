@@ -12,6 +12,12 @@ pipeline {
         pollSCM('* * * * *')
     }
 
+
+    options {
+        disableConcurrentBuilds()
+        buildDiscarder(logRotator(numToKeepStr: '10', daysToKeepStr: '10'))
+    }
+
     stages {
         stage('Build') {
             steps {
